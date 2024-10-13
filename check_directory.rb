@@ -1,16 +1,12 @@
 require 'fileutils'
 
 # تحديد المسار المطلق لمجلد csv-viewer
-source = '/path/to/original/csv-viewer'
-
+source = '/home/raneen_jubahi/csv_viewer'
 # تحديد المسار المطلق لمجلد rubycode
-destination = '/path/to/gsg/rubycode'
-
-# إنشاء المجلد الهدف إذا لم يكن موجودًا
-FileUtils.mkdir_p(destination)
-
+destination = '/home/raneen_jubahi/gsg/rubycode'
 # نقل جميع الملفات من csv-viewer إلى rubycode
 FileUtils.mv(Dir.glob("#{source}/*"), destination)
 
 puts "تم نقل جميع الملفات بنجاح!"
+
 
